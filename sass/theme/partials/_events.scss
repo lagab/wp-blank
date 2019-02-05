@@ -1,0 +1,41 @@
+#tribe-events{
+    #tribe-bar-form{
+        background: transparent;
+        input[type=text]{
+            @extend .form-control;
+            font-style: normal;
+        }
+        .tribe-bar-submit{
+            padding-top: 30px;
+            width: auto;
+            margin-left: auto;
+            input[type=submit]{
+                @extend .btn;
+                @extend .btn-primary;
+                font-size: inherit;
+            }
+        }
+    }
+    .tribe-bar-views-inner{
+        background: none;
+    }
+    #tribe-bar-views{
+        #tribe-bar-views-toggle:focus, #tribe-bar-views-toggle:hover{
+            background: $light-gray;
+        }
+        .tribe-bar-views-list{
+            background: $light-gray;
+        }
+        .tribe-bar-views-option.tribe-bar-active, .tribe-bar-views-option:hover{
+           background: #e0e0e0;
+        }
+    }
+   .tribe-events-button,.tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a{
+       background: $primary;
+   }
+   
+}
+.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a{
+       background-color: #eaeaea;
+       color:  #212529;
+}

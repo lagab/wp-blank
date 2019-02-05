@@ -1,0 +1,7 @@
+table.wp-block-table
+{
+    @extend .table;
+}
+table.is-style-regular{
+    @extend .table-bordered;
+}

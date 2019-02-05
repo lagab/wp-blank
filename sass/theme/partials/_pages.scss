@@ -1,0 +1,18 @@
+.tags-links{
+    a{
+        padding: 6px 8px;
+        margin-right: 0;
+        margin-bottom: 4px;
+        line-height: 100%;
+        display: inline-block;
+        background-color: $light-gray;
+        letter-spacing: 1px;
+        font-size: 10px !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            color: #fff;
+            background-color: $primary;
+        }
+    }
+}

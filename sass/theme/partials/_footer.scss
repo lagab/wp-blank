@@ -1,0 +1,30 @@
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-bottom: 0;
+    z-index: 999;
+    a {
+        background: #E0E0E0;
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        display: block;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 2px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        outline: 0;
+    }
+}
+#wrapper-footer{
+    padding: 10px 0;
+    background: $light-gray;
+}

@@ -1,0 +1,20 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Raleway', sans-serif;
+    //font-family: 'Great Vibes', cursive;
+}
+
+@import "partials/header";
+@import "partials/menu";
+@import "partials/footer";
+@import "partials/buttons";
+@import "partials/layouts";
+@import "partials/pages";
+@import "partials/forms";
+@import "partials/blocks";
+@import "partials/table";
+@import "partials/widgets"; 
+@import "partials/unyson"; 
+@import "partials/events"; 
