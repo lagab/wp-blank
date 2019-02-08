@@ -1,0 +1,61 @@
+@import "unyson/buttons"; 
+
+.fw-page-builder-content {
+    
+    // Accordion
+    .fw-accordion {
+        border-color: #e0e0e0;
+        .fw-accordion-title {
+            background: #fafafa;
+            border-color: #e0e0e0;
+        }
+    }
+    // tabs
+    .fw-tabs-container{
+        .fw-tabs {
+            ul li {
+                border-color: #e0e0e0;
+                &:first-child {
+                        border-left: 1px solid #e0e0e0;
+                }
+            }
+        }
+        .fw-tab-content{
+            border-color: #e0e0e0;
+        }
+    }
+    // pricing
+    .fw-pricing {
+        .fw-package-wrap {
+            .fw-package {
+                .fw-pricing-row span{
+                    font-weight: bold;
+                }
+
+            }
+            &.default-col {
+                .fw-package {
+                    .fw-heading-row,
+                    .fw-pricing-row {
+                        background: #b0bec5;
+                    }
+                }
+            }
+            &.highlight-col {
+                .fw-package {
+                    .fw-heading-row,
+                    .fw-pricing-row {
+                        background: #81c784;
+                    }
+                }
+            }
+        }
+    }
+    // Iconbox image
+    .fw-iconbox-1,
+    .fw-iconbox-2 {
+        .fw-iconbox-image {
+            color: inherit;
+        }
+    }
+}

@@ -73,3 +73,14 @@ if ( ! function_exists( '_fw_action_coming_soon_page' ) ) :
 	}
 endif;
 add_action( 'send_headers', __NAMESPACE__ . '\\_fw_action_coming_soon_page', 12 );
+
+if ( ! function_exists( 'fw_theme_display_header' ) ) :
+	/**
+	 * Display theme header
+	 */
+	function fw_theme_display_header() {
+		$the_core_header_settings = defined( 'FW' ) ? fw_get_db_settings_option( 'header_settings' ) : array();
+		$the_core_header_type = isset( $the_core_header_settings['header_type_picker']['header_type'] ) ? $the_core_header_settings['header_type_picker']['header_type'] : 'header-1';
+		get_template_part( 'global-templates/headers/'.$the_core_header_type);
+	}
+endif;

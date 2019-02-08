@@ -1,0 +1,36 @@
+.fw-page-builder-content {
+    
+    .fw-btn {
+        @extend .btn;
+    }
+    
+    .fw-btn-1 { // default btn 
+        background-color: $primary;
+        &:hover,
+        &:focus {
+            
+        }
+    }
+    
+    .fw-btn-blue {
+        background-color: #81c784;
+        &:hover,
+        &:focus {
+            
+        }
+    }
+    .fw-btn-green {
+        background-color: #81c784;
+        &:hover,
+        &:focus {
+            
+        }
+    }
+    .fw-btn-red {
+        background-color: #81c784;
+        &:hover,
+        &:focus {
+            
+        }
+    }
+}

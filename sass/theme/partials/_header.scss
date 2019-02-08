@@ -18,3 +18,35 @@ section.breadcrumbs-area::before{opacity:0.5}
         text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
     }
 }
+
+@include media-breakpoint-up(md) {
+    #wrapper-navbar {
+        &.header-1,
+        &.header-2,
+        &.header-3,
+        &.header-4{
+            .navbar-expand-md .navbar-collapse {
+                display: block !important;
+            }
+        }
+        &.header-3,
+        &.header-4 {
+            #main-menu {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: flex-start;
+            }
+        }
+        &.header-4 {
+            .container {
+                display: block;
+                text-align: center;
+                #main-menu {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
