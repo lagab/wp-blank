@@ -81,6 +81,7 @@ if ( post_password_required() ) {
 			wp_list_comments( array(
 				'style'      => 'ol',
 				'short_ping' => true,
+				'walker'        => new Bblank\Comments\WP_Walker_Comment(),
 			) );
 			?>
 
