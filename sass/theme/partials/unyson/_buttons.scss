@@ -2,35 +2,82 @@
     
     .fw-btn {
         @extend .btn;
+        & > span {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
     }
     
     .fw-btn-1 { // default btn 
         background-color: $primary;
+        font-family: inherit;
         &:hover,
         &:focus {
-            
+            background-color: lighten($primary,15%);
         }
-    }
     
-    .fw-btn-blue {
-        background-color: #81c784;
-        &:hover,
-        &:focus {
-            
+        &.fw-btn-black {
+            background-color: #000;
+            &:hover,
+            &:focus {
+                background-color: lighten(#000,15%);
+            }
+        }
+        &.fw-btn-blue {
+            background-color: #81c784;
+            &:hover,
+            &:focus {
+                background-color: lighten(#81c784,15%);
+            }
+        }
+        &.fw-btn-green {
+            background-color: $green;
+            &:hover,
+            &:focus {
+                background-color: lighten($green,15%);
+            }
+        }
+        &.fw-btn-red {
+            background-color: $red;
+            &:hover,
+            &:focus {
+                background-color: lighten($red,15%);
+            }
         }
     }
-    .fw-btn-green {
-        background-color: #81c784;
-        &:hover,
-        &:focus {
-            
+    .fw-action-btn {
+        .fw-btn {
+            span {
+                display: inline-block;
+                text-transform: uppercase;
+                padding-right: 5px;
+                font-size: 0.8rem;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                transition: all .2s;
+                font-weight: bold;
+            }
+
+            &:after {
+                @extend .fa;
+                @extend .fa-angle-right:before;
+                opacity: 0;
+                margin-left: -15px;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                transition: all .2s;
+            }
+            &:hover {
+                background-color: transparent;
+                background: rgba(0,0,0,.05);
+                color: $primary;
+                &:after {
+                    opacity: 1;
+                    margin-left: 0;
+                }
+            }
         }
-    }
-    .fw-btn-red {
-        background-color: #81c784;
-        &:hover,
-        &:focus {
-            
-        }
+        
     }
 }

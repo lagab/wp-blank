@@ -1,3 +1,107 @@
 #page-wrapper {
     overflow: hidden;
 }
+
+.comment-list {
+    list-style: none;
+    .comment {
+        
+    }
+}
+
+#full-width-page-wrapper {
+    & > .container {
+        max-width: 100%;
+    }
+}
+
+//Gallery 
+.gallery-item {
+    padding: 0 10px;
+    .gallery-icon {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.11);
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.11);
+        
+            &:before {
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0,0,0,0.018);
+                z-index: 1;
+                -webkit-transition: all 0.2s ease-out;
+                -moz-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                -ms-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                height: 100%;
+            }
+            &:hover{
+                &:before {
+                    background-color: rgba(0,0,0,0.2);
+                }
+            }        
+        a {
+            display: inline-block;
+            
+        }
+    }
+}
+
+//Comments
+
+.comments-area {
+    ol {
+        list-style: none;
+    }
+    & > .comment-list{
+        padding-left: 0;
+    }
+
+    .comment-block {
+        margin-bottom: 15px;
+        border-bottom: 1px dotted #eae9e9;
+        padding-bottom: 5px;
+        .comment-img {
+            display: inline-block;
+            float: left;
+            img {
+                margin-right: 20px;
+            }
+        }
+        .comment-body {
+            display: inline-block;
+            position: relative;
+            width: calc(100% - 130px);
+        }
+        .comment-title,
+        .comment-date {
+            display: inline-block;
+        }
+        .comment-date {
+            color: #999;
+            font-size: 0.7rem;
+        }
+         .comment-title {
+             font-size: 0.9rem;
+             a {
+                 color: inherit;
+             }
+         }
+         .comment-content {
+             p {
+                 margin-bottom: 0;
+             }
+         }
+         .comment-meta,
+         .reply {
+             display: inline-block;
+         }
+    }
+}
+

@@ -3,3 +3,18 @@
         @extend .list-unstyled; 
     }
 }
+
+.widget_categories {
+    ul {
+        list-style: none; 
+    }
+}
+
+.cat-links {
+    a {
+        display: inline-block;
+    }
+}
+.tags-links {
+    display: block;
+}
