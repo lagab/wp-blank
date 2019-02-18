@@ -43,6 +43,9 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
         esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' )
       )
     );
+    
+    
+    $site_info = __('&copy; Copyright 2019.') . " " . __('All rights reserved');
 
     echo apply_filters( 'understrap_site_info_content', $site_info ); // WPCS: XSS ok.
   }
