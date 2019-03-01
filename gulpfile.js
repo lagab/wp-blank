@@ -144,8 +144,12 @@ gulp.task( 'scripts', function() {
         // End - All BS4 stuff
 
         paths.dev + '/js/skip-link-focus-fix.js',
+        
 
         // Adding currently empty javascript file to add on for your own themes´ customizations
+        paths.dev + '/js/masonry.pkgd.min.js',
+        paths.dev + '/js/lightgallery-all.min.js',
+        
         // Please add any customizations to this .js file only!
         paths.dev + '/js/custom-javascript.js'
     ];
@@ -193,9 +197,24 @@ gulp.task( 'copy-assets', function() {
 // _s SCSS files
     gulp.src( paths.node + 'undescores-for-npm/sass/media/*.scss' )
         .pipe( gulp.dest( paths.dev + '/sass/underscores' ) );
+        
+        
+    gulp.src( paths.node + 'lightgallery/src/sass/*.scss' )
+        .pipe( gulp.dest( paths.dev + '/sass/lightgallery' ) );
+    gulp.src( paths.node + 'lightgallery/dist/fonts/*.{ttf,woff,woff2,eot,svg}' )
+        .pipe( gulp.dest( './fonts' ) );
+    gulp.src( paths.node + 'lightgallery/dist/img/*.{gif,png}' )
+        .pipe( gulp.dest( './img' ) );
 
 // _s JS files into /src/js
     gulp.src( paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js' )
+        .pipe( gulp.dest( paths.dev + '/js' ) );
+        
+ // Copy masonry JS files
+    gulp.src( paths.node + 'masonry-layout/dist/masonry.pkgd.min.js' )
+        .pipe( gulp.dest( paths.dev + '/js' ) );
+ // Copy masonry JS files
+    gulp.src( paths.node + 'lightgallery/dist/js/lightgallery-all.min.js' )
         .pipe( gulp.dest( paths.dev + '/js' ) );
 });
 

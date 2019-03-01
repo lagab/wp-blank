@@ -73,6 +73,22 @@
     background: transparent !important;
 }
 
+/* Progress bar  */
+.fw-progressbar-items {
+    margin-bottom: 20px;
+    
+    .fw-list-title {
+        
+    }
+    .progress-label {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .progress {
+        margin-bottom: 5px;
+    }
+}
+
 /* list items*/
 
 .fw-list-items{
@@ -84,6 +100,16 @@
 		text-transform: uppercase;
 		display: block;
 		margin-top: 5px;
+		position: relative;
+		&:after {
+		    position: absolute;
+		    //content: " ";
+		    height: 1px;
+		    background: #f1f1f1;
+		    width: 59%;
+		    top: 50%;
+		    left: 22%;
+		}
 	}
 	.fw-item-text{
 	  em{

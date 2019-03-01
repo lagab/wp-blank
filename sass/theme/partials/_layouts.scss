@@ -18,7 +18,8 @@
 //Gallery 
 .gallery-item {
     padding: 0 10px;
-    .gallery-icon {
+
+    &.gallery-icon2 {
         position: relative;
         overflow: hidden;
         display: inline-block;

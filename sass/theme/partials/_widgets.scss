@@ -18,3 +18,31 @@
 .tags-links {
     display: block;
 }
+
+.grid {
+
+  /* clear fix */
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 32.333%;
+}
+
+.grid-item {
+  float: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}

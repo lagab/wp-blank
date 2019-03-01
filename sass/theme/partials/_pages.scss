@@ -5,7 +5,8 @@ article {
     }
     .entry-content {
         table {
-            @extend .table.table-borderless;
+            @extend .table;
+            @extend .table-borderless;
         }
     }
 }
